@@ -1,0 +1,18 @@
+body{
+    background-image: url(/img/fondoo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+       
+.chat{
+    background-color: wheat;
+    }
+    
+.titre{
+    text-align: center;
+    }
+
+#donut {
+    border-radius: 100%;
+        
+    }
