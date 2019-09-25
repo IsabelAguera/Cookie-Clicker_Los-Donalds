@@ -1,18 +1,36 @@
 body{
-    background-image: url(/img/fondoo.png);
+    background-color:#115e8e;
     background-repeat: no-repeat;
     background-size: cover;
+    padding:0;
     }
        
 .chat{
-    background-color: wheat;
+    background-color: #89cad2;
+    padding-bottom: 14% !important;
+    border-radius: 3%;
+    margin-left: 1%
     }
     
 .titre{
     text-align: center;
     }
-
-#donut {
-    border-radius: 100%;
-        
+.donut{
+    display: flex !important;
+    align-items: center !important;
     }
+#tete{
+    background-color: transparent;
+    border:none;
+}
+
+#score{
+    background-color: transparent;
+    border:none;
+}
+
+.homer{
+    display: flex !important;
+    align-items: right !important;
+    margin-right: 0% !important;
+}

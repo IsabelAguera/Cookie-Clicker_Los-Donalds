@@ -1,5 +1,5 @@
 function draw() {
-    var canvas = document.getElementById("donut");
+    var canvas = document.getElementById("clic");
     var ctx = canvas.getContext("2d");
     
     // GRAND CERCLE
@@ -27,11 +27,11 @@ function draw() {
     ctx.fill()
     
     //PETIT CERCLE
-    ctx.strokeStyle = "white"
+    ctx.strokeStyle = "#89cad2"
     ctx.beginPath();
     ctx.arc(150, 150, 50, 0, 2 * Math.PI);
     ctx.stroke();
-    ctx.fillStyle = "white"
+    ctx.fillStyle = "#89cad2"
     ctx.fill()
     
     //Sucres
@@ -149,3 +149,48 @@ function draw() {
     ctx.fill()
     
     }
+
+    var score = 0;
+    var btn = document.getElementById("clic");
+    var aff = document.getElementById("affichage");
+    var x = 0 //mehmet
+    var prix1 = 70
+    var y = 0 //hamza
+    var prix2 = 250
+    var z = 0 //ashraf
+    var prix3 = 500
+    
+    function counter() {
+    score += 1
+    document.getElementById("affichage").innerHTML = score;
+    }
+    
+    function changePrix2() {
+    }
+    
+    //function compteur de clique
+    function count1() {
+    x++
+    document.getElementById("counter1").innerHTML = x;
+    prix1 = parseInt(prix1 * 1.25)
+    document.getElementById("prix1").innerHTML = prix1;
+    }
+    
+    function count2() {
+    
+    y++
+    document.getElementById("counter2").innerHTML = y;
+    prix2 = parseInt(prix2 * 1.52)
+    document.getElementById("prix2").innerHTML = prix2;
+    }
+    
+    function count3() {
+    z++
+    document.getElementById("counter3").innerHTML = z;
+    prix3 = parseInt(prix3 * 1.25)
+    document.getElementById("malus").innerHTML = prix3;
+    
+    }
+    
+    //Fin compteur de clique
+    //tamer

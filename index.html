@@ -7,94 +7,102 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <title>CookieDonuts</title>
 </head>
 
 <body onload="draw()">
-        
-    <div class="container-fluid">
-        <header>
-            <div class="col-row">
-                <div class="col-md-2">
-                    <h2>score</h2>
-                    <div>
-                        <p> score: <a id="affichage"> 0</a></p>
-                    </div>
-                </div>
-                <div class="col-md-5 col-md-offset-1 titre">
-                    <img src="/img/logo.png" alt="">
-                </div>
-                <div class="col-md-3 col-md-offset-1">
-                    <h2>information</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>score</h2>
+                <div>
+                    <p> score: <a id="affichage"> 0</a></p>
                 </div>
             </div>
-        </header>
+            <div class="col-md-4 col-md-offset-1 titre">
+               <img src="/img/tittre.png" alt="titre" width="150%">
+            </div>
+            <div class="col-md-4 col-md-offset-1 homer">
+                <img class="rounded float-right" src="/img/homer-removebg-preview (2).png" width="20%" id="homer" alt="information">
+            </div>
+        </div>
+
     </div>
     <br>
     <div class="container-fluid cat">
-        <div class="col-row">
-            <article class="col-md-9 chat ">
-                <canvas width="300" height="300" id="donut"></canvas>
-                <button id="clic" onclick="counter()">
-                    blablabla
-                </button>
-<!--BONUS-->
+       
+        <div class="col-row d-flex row">
+            <article class="col-md-8 chat">
+                <div class="row col-4 offset-4 pt-5 mb-0 donnuts">
+                        <img src="/img/police.png" alt="police homer" >
+                    <canvas class="donut" onclick="counter()" width="300" height="300" id="clic"></canvas>
+                </div>
+                <!--BONUS-->
             </article>
+
             <aside class="col-md-3">
+                <div class="row col-md-4 offset-4 bonus pt-5 mb-0">
+
+                
                 <h2>Bonus</h2>
 
                 <!--
-1er bonus
--->
-                
+                    1er bonus
+                    -->
+                <div class="col-row">
                     <div class="col-md-6 count">
-                        <p><a id="counter1"> 0</a></p>
+                        <p id="counter1">0</p>
                     </div>
                     <div class="col-md-6 mehmet">
-                        <button id="tete" onclick="count1()">
-                            <img src="/img/me-removebg-preview-removebg-preview (1).png" width="15%">
-                        </button>
+                         
+                            <img src="/img/me-removebg-preview-removebg-preview (1).png" id="tete" onclick="count1()" width="600%" >
+                        
                     </div>
                     <div class="col-row prix ">
-                        <p><a id="prix"> 70</a></p>
+                        <p id="prix1">70</p>
                     </div>
-                
+                </div>
                 <!--
-2eme bonus
--->
-                
+                    2eme bonus
+                    -->
+                <div class="col-row">
                     <div class="col-md-6 count">
-                        <p><a id="counter2"> 0</a></p>
+                        <p id="counter2">0</p>
                     </div>
                     <div class="col-md-6 hamza">
-                        <button id="score" onclick="count2()">
-                            <img src="/img/hamzaa1-removebg-preview.png" width="15%">
-                        </button>
+                     
+                        <img src="/img/hamzaa1-removebg-preview.png" id="score" onclick="count2()" width="600%">
+                
 
                     </div>
                     <div class="col-row prix ">
-                        <p><a id="prix"> 250</a></p>
+                        <p id="prix2">250</p>
                     </div>
-                
+                </div>
 
                 <!--
-3eme bonus
--->
-                
+                    3eme bonus
+                    -->
+                <div class="col-row">
                     <div class="col-md-6 count">
-                        <p><a id="counter3"> 0</a></p>
+                        <p id="counter3">0</p>
                     </div>
                     <div class="col-md-6 ashraf">
-                        <button id="tete" onclick="count3()">
-                            <img src="/img/as-removebg-preview-removebg-preview.png" width="15%">
-                        </button>
+                        
+                            <img src="/img/as-removebg-preview-removebg-preview.png" id="tete" onclick="count3()" width="600%">
+                        
                     </div>
-                    <div class="col-row prix ">
-                        <p><a id="malus"> 500</a></p>
+                    <div class="col-row prix3">
+                        <p id="malus"> 500</p>
                     </div>
-                
+                </div>
+            </div>
             </aside>
+
+
+
         </div>
     </div>
 
@@ -103,6 +111,3 @@
 </body>
 
 </html>
-
-
-
