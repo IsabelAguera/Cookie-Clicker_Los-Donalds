@@ -3,28 +3,25 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding:0;
+    font-family: "simpsonFont"
     }
        
 .chat{
     background-color: #89cad2;
-    padding-bottom: 14% !important;
+    padding: 50px 0 50px 0;
     border-radius: 3%;
-    margin-left: 1%
     }
     
 .titre{
     text-align: center;
     }
-.donut{
-    display: flex !important;
-    align-items: center !important;
-    }
+
 #tete{
     background-color: transparent;
     border:none;
 }
 
-#score{
+#multiplier{
     background-color: transparent;
     border:none;
 }
@@ -32,5 +29,65 @@ body{
 .homer{
     display: flex !important;
     align-items: right !important;
-    margin-right: 0% !important;
+    justify-content: flex-end;
+}
+#tete {
+    width: 100px;
+    height: 80px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+   
+#tete:hover {
+    width: 120px; /* on affiche l'image au carré */
+    height: 100px;
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+  }
+
+#multiplier{
+    width: 100px;
+    height: 80px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#multiplier:hover {
+    width: 120px; /* on affiche l'image au carré */
+    height: 100px;
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+  }
+
+  @font-face{
+    font-family: "simpsonFont";
+    src: url(/simpsonfont/Simpsonfont\ DEMO.otf)
+  }
+
+@keyframes click{
+    0% {
+        width: 300px;
+        height: 300px;
+    }
+    25% {
+        width: 290px;
+        height: 290px;
+    }
+    50% {
+        width: 280px;
+        height: 280px;
+    }
+    75% {
+        width: 280px;
+        height: 280px;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+    }
 }

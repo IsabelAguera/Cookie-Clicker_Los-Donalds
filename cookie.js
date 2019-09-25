@@ -160,11 +160,6 @@ function draw() {
     var z = 0 //ashraf
     var prix3 = 500
     
-    function counter() {
-    score += 1
-    document.getElementById("affichage").innerHTML = score;
-    }
-    
     function changePrix2() {
     }
     
@@ -193,4 +188,14 @@ function draw() {
     }
     
     //Fin compteur de clique
+    
     //tamer
+    
+    function counter() {
+        score += 1
+        document.getElementById("affichage").innerHTML = score;
+        document.getElementById('clic').style.animation = 'click 0.1s linear'
+        setTimeout(() => {
+            document.getElementById('clic').style.animation = ''
+        }, 100)
+    }
