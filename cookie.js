@@ -21,9 +21,6 @@ let timeElm = document.getElementById('time');
 function counter() {
 score += n
 document.getElementById("affichage").innerHTML = score;
-if (score >= prix1){document.getElementById('multiplier').classList.add('tete2')}
-if (score >= prix2){document.getElementById('tete').classList.add('tete2')}
-if (score >= prix3){document.getElementById('tetee').classList.add('tete2')}
 document.getElementById('clic').style.animation = 'click 0.1s linear'
 setTimeout(() => {
 document.getElementById('clic').style.animation = ''
