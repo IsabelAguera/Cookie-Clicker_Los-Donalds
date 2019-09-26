@@ -68,7 +68,7 @@ p {
 
   @font-face{
     font-family: "simpsonFont";
-    src: url(/simpsonfont/Simpsonfont\ DEMO.otf)
+    src: url(simpsonfont/Simpsonfont\ DEMO.otf)
   }
 
 @keyframes click{
