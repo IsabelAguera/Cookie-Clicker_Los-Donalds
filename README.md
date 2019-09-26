@@ -3,7 +3,7 @@
 - Bunyamin Serbest https://github.com/Bunyaminserbest
 - Hani Boubkerhani https://github.com/hanioch
 - Soufiane Elghorfi https://github.com/soufianeelghorfi1
-- Isabelle Aguera https://github.com/isabelaguera
+- Isabel Aguera https://github.com/IsabelAguera
 - Janina Renkes https://github.com/renlcesjanina
 
 
